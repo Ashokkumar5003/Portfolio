@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ba31d2e541.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="con">
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,I'm Ashok kumar<br> <h1><span>SDE & Data Analyst</span></h1></h1>
+        </div>
+    </div>
+</div>
+<!------------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Passionate Software Developer with expertise in Python, SQL, JavaScript, and Data Structures & Algorithms (DSA). I thrive on solving complex problems, building scalable applications, and optimizing code for efficiency.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><h2>programming languages :</h2></span><br> PYTHON,SQL </li>
+                        <li><span><h2>Frontend Development :</h2></span><br>HTML,CSS,JAVASCRIPT</li>
+                        <li><span><h2>visualization Tools:</h2></span><br>POWER BI, MS EXCEL</li>
+                        <li><span><h2>Additional Tools:</h2></span><br>GIT & GITHUB</li>
+                        <!-- <li><span><h2>Additional Skills :</h2></span><br>Agile Methodologies: SCRUM, Version Control System: GIT, GITHUB</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><h1>Data Analyst Intern(Jul 2024 - Jan 2025)</h1></span><br>Worked on real-time data analysis projects involving data cleaning, visualization, and reporting using tools like Python, Excel, Power BI, and SQL. Gained hands-on experience in transforming raw data into actionable insights to support business decisions.</li>
+                        <li><span><h1>Python Full Stack Development(Freelancer)</h1></span><br>Developed an Automated Bird Species Identification System using Audio Signal Processing and Spectrogram Analysis, achieving 97% accuracy in classifying bird species with Python, HTML, and CSS.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><h1>Bachelors in Information Technology</h1></span><br>Arunai Engineering College,Anna University.<br>Tiruvannamalai,Tamilnadu. <br>July 2020 - June 2024</li>
+                        <li><span><h1>Higher Secondary</h1></span><br>SRGDS Matriculation Higher Secondary School. <br>Tiruvannamalai,Tamilnadu. <br> Jun 2018 - Apr 2020</li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+</div>
+<!------------services--------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Good web design combines creativity and functionality, aiming to create an engaging and intuitive interface that effectively communicates the website's purpose.Web designers utilize various tools and technologies such as graphic design software, coding languages like HTML, CSS, and JavaScript to bring their designs to life. </p>
+                
+            </div> 
+            <div>
+                <i class="fa-solid fa-crop-simple"></i> 
+                <h2>Dashboard & Reporting</h2>
+                <p>I design and build interactive, user-friendly dashboards and reporting systems that turn raw data into clear, actionable insights. Whether you need real-time business metrics, sales reports, or performance tracking tools, I can help you visualize data that drives better decisions.
+            </div>  
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Software Development</h2>
+                <p> Developed an AI-powered attendance maintenance system to automate and streamline the process of tracking and managing attendance. Utilized computer vision and machine learning algorithms to accurately recognize and record attendance in real-time. Implemented a user-friendly interface for easy access and reporting. Enhanced efficiency and accuracy, reducing manual errors and saving time.</p>
+                
+            </div>    
+        </div>
+
+    </div>
+</div>
+<!------------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/voice_assistant.png" height="300px" width="500px">
+                <div class="layer">
+                    <h3>Virtual Voice Assistant</h3>
+                    <p>A Python-based Virtual Voice Assistant that uses Speech Recognition and NLP to perform tasks like answering queries, controlling applications, fetching information, and automating daily activities through voice commands.</p>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/Data_analysis.jpg" height="300px" width="500px">
+                <div class="layer">
+                    <h3>Road-Accident-Dashboard</h3>
+                    <p>Created a dynamic Car Sales Dashboard using Excel and Power BI to turn sales data into powerful visual insights. The dashboard showcases key metrics like monthly sales trends, top-performing models, and regional performance, enabling data-driven decision-making for sales strategy and growth.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/personal task manger.jpeg" height="300px" width="500px">
+                <div class="layer">
+                    <h3>Personal Task Manager</h3>
+                    <p>Develop a full-stack web application that allows users to manage their daily tasks efficiently. The app supports user registration, login, and CRUD operations for personal tasks. Tasks can be categorized, prioritized, and filtered by status or due date.</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+<!-------------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>ashokit1012@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6374517308</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com/sashok.ashok.925/?_rdr"><i class="fa-brands fa-facebook"></i></a>
+                    <!-- <a target="_blank" href="https://twitter.com/Barath1239659"><i class="fa-brands fa-x-twitter"></i></a> -->
+                    <a target="_blank" href="https://www.instagram.com/ashoksoffl/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ashokit1012/"><i class="fa-brands fa-linkedin"></i></a>
+                </div><br>   
+                <a href=""C:\Users\swetha\OneDrive\Desktop\Resume\Barath_resume.pdf"" download target=_blank class="btn btn2">DOWNLOAD CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Ashok.Made  <i class="fa-solid fa-heart"></i> by Web Developer </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJd3sh0-zdOB_QqQkttEGj6Onq9miMfX0QhEuJUrFZEV5Pson35ntxe6mQZC_U2iVw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Form submitted successfully"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+</body>    
+</html>
